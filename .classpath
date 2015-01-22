@@ -2,5 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/manuel/Java_Projects/SEW_A11_JUnit_Mock/req/sprueche16.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/manuel/Java_Projects/SEW_A11_JUnit_Mock/req/spruche_doc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/manuel/Java_Projects/SEW_A11_JUnit_Mock/req/witze16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manuel/Java_Projects/SEW_A11_JUnit_Mock/req/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
