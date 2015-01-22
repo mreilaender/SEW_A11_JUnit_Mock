@@ -2,7 +2,10 @@ package reilaender.test;
 
 import java.io.FileNotFoundException;
 
+import static org.junit.Assert.*;
+
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -21,7 +24,19 @@ public class SpruecheTest {
 	}
 	
 	@Test
-	public void testAppendNewSaying() {
-		System.out.println(sprueche.readFirstLine());
+	@Ignore
+	public void testAppendNewSayingNormalStrings() {
+		sprueche.appendNewSaying("Test1234");
+		assertEquals("Test", "Test1234", sprueche.readLastSaying());
+	}
+	@Test
+	@Ignore
+	public void testAppendNewSayingSpecialCharacters() {
+		sprueche.appendNewSaying("\\!\"§%$%/$%/$?!§$%&/()=?`+#");
+		assertEquals("TestSpecialCharacters", "\\!\"§%$%/$%/$?!§$%&/()=?`+#", sprueche.readLastSaying());
+	}
+	@Test
+	public void testReadFirstLine() {
+		System.out.println("ReadFirstLine: " + sprueche.readFirstLine());
 	}
 }
